@@ -5,7 +5,9 @@ The code and readme is taken from https://github.com/nyuad-cai/MedFuse/tree/main
 
 <hr>
 
-Here we modified the [codes](https://github.com/YerevaNN/mimic3-benchmarks/) for the publicly available Medical Information Mart for Intensive Care (MIMIC-IV) database ([paper](http://www.nature.com/articles/sdata201635), [website](http://mimic.physionet.org)). 
+Here we modified the [codes](https://github.com/YerevaNN/mimic3-benchmarks/) for the publicly available Medical Information Mart for Intensive Care (MIMIC-IV) database ([paper](http://www.nature.com/articles/sdata201635), [website](http://mimic.physionet.org)).
+
+NOTE: **Steps 2 - 6 below may only work by installing the mimic3-benchmark repo and requirements**
 
 ## Structure
 
