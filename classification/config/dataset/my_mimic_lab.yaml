@@ -1,0 +1,10 @@
+name: MIMICLab
+task: in-hospital-mortality 
+ehr_data_dir: /data/home/awc2159/MIMIC_IV/files/mimiciv/benchmark
+cxr_data_dir: /data/home/awc2159/MIMIC_CXR_JPG/physionet.org/2.1.0
+labels_set: None
+data_ratio: 0.0
+data_pairs: paired_ehr_cxr
+transforms:
+  resize: 384
+  crop: 384

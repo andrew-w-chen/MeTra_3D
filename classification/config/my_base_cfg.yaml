@@ -1,7 +1,7 @@
 meta:
-  prefix_name: ???
+  prefix_name: EHR
   output_dir: /home/awc2159/projects/MeTra_3D/EHR_checkpoints
-  evaluation_dir: /data/home/firas/Desktop/work/combine_image_and_text/evaluation_outputs
+  evaluation_dir: /home/awc2159/projects/MeTra_3D/EHR_evaluation_outputs
   checkpoint_path: False
   transforms: True
   precision: 32
