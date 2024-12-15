@@ -55,7 +55,7 @@ def get_training_settings(cfg) -> dict:
     return {'lr_logger': lr_logger, 'early_stopping_callback': early_stopping_callback, 'model': model, 'loss_fnc': loss_fnc}
 
 
-@hydra.main(config_path="../config", config_name="base_cfg")
+@hydra.main(config_path="../config", config_name="my_base_cfg")
 def run(cfg: DictConfig):
     pl.seed_everything(seed=cfg.meta.seed, workers=True)
     folds = range(5) if cfg.meta.cross_validation else cfg.meta.folds
