@@ -15,8 +15,8 @@ import os
 
 class Discretizer:
     def __init__(self, timestep=0.8, store_masks=True, impute_strategy='zero', start_time='zero',
-                 config_path= '/data/home/firas/Desktop/work/combine_image_and_text/classification/datasets/med_lab_utils/discretizer_config.json'):
-
+                 config_path= '/home/awc2159/projects/MeTra_3D/classification/datasets/med_lab_utils/discretizer_config.json'):
+        
         with open(config_path) as f:
             config = json.load(f)
             self._id_to_channel = config['id_to_channel']

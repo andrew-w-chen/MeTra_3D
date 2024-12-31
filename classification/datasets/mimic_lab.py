@@ -147,7 +147,7 @@ def loadmetadata(cfg):
 
     data_dir = cfg.dataset.cxr_data_dir
     cxr_metadata = pd.read_csv(f'{data_dir}/mimic-cxr-2.0.0-metadata.csv')
-    icu_stay_metadata = pd.read_csv(f'{cfg.dataset.ehr_data_dir}/root/all_stays.csv')
+    icu_stay_metadata = pd.read_csv(f'{cfg.dataset.ehr_data_dir}/all_stays.csv')
     
     # only common subjects with both icu stay and an xray
     cxr_merged_icustays = cxr_metadata.merge(icu_stay_metadata, how='inner', on='subject_id')
@@ -316,7 +316,7 @@ def get_cxr_datasets(cfg):
 
 
 def read_timeseries():
-    path = f'/data/home/firas/Desktop/work/other_groups/MedFuse/mimic4extract/data/in-hospital-mortality/train/16662316_episode8_timeseries.csv'
+    path = f'/data/home/awc2159/MIMIC_IV/files/mimiciv/benchmark/in-hospital-mortality/train/16662316_episode8_timeseries.csv'
     ret = []
     with open(path, "r") as tsfile:
         header = tsfile.readline().strip().split(',')
@@ -331,12 +331,12 @@ class EHRdataset(Dataset):
     def __init__(self, listfile, dataset_dir, return_names=True, period_length=48.0):
         self.return_names = return_names
         self.discretizer = Discretizer(timestep = 1.0, store_masks=True, impute_strategy='previous', start_time='zero',
-            config_path='/data/home/firas/Desktop/work/combine_image_and_text/classification/datasets/med_lab_utils/discretizer_config.json')
+            config_path='/home/awc2159/projects/MeTra_3D/classification/datasets/med_lab_utils/discretizer_config.json')
 
         discretizer_header = self.discretizer.transform(read_timeseries())[1].split(',')
         cont_channels = [i for (i, x) in enumerate(discretizer_header) if x.find("->") == -1]
         self.normalizer = Normalizer(fields=cont_channels)
-        self.normalizer.load_params('/data/home/firas/Desktop/work/combine_image_and_text/classification/datasets/med_lab_utils/ph_ts1.0.input_str:previous.start_time:zero.normalizer')
+        self.normalizer.load_params('/home/awc2159/projects/MeTra_3D/classification/datasets/med_lab_utils/ph_ts1.0.input_str:previous.start_time:zero.normalizer')
 
         self._period_length = period_length
         self._dataset_dir = dataset_dir
@@ -416,7 +416,7 @@ def get_datasets(cfg):
     test_ds = EHRdataset(f'{cfg.dataset.ehr_data_dir}/{cfg.dataset.task}/test_listfile.csv', os.path.join(cfg.dataset.ehr_data_dir, f'{cfg.dataset.task}/test'))
     return train_ds, val_ds, test_ds
 
-@hydra.main(config_path="../config", config_name="base_cfg")
+@hydra.main(config_path="../config", config_name="my_base_cfg")
 def run(cfg: DictConfig):
     train_dl, val_dl, test_dl = load_cxr_ehr(cfg)
     sample_ = next(iter(train_dl))

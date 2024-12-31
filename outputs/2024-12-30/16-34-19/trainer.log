@@ -1,0 +1,4 @@
+[2024-12-30 16:35:16,336][timm.models.hub][INFO] - Downloading: "https://storage.googleapis.com/vit_models/augreg/S_16-i21k-300ep-lr_0.001-aug_light1-wd_0.03-do_0.0-sd_0.0--imagenet2012-steps_20k-lr_0.03-res_384.npz" to /home/awc2159/.cache/torch/hub/checkpoints/S_16-i21k-300ep-lr_0.001-aug_light1-wd_0.03-do_0.0-sd_0.0--imagenet2012-steps_20k-lr_0.03-res_384.npz
+
+[2024-12-30 16:35:24,463][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpv1b2gsi4
+[2024-12-30 16:35:24,466][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpv1b2gsi4/_remote_module_non_sriptable.py

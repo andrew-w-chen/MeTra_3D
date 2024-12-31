@@ -22,7 +22,7 @@ defaults:
 optimizer:
   name: Adam
   lr: 1e-5
-  lr_scheduler: plateau
+  lr_scheduler: ReduceLROnPlateau # original changed for new torch compatabiltiy: plateau
   scheduler_factor: 0.3
   gamma: 0.5
   patience: 15

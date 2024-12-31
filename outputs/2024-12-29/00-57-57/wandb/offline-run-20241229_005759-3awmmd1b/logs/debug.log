@@ -1,0 +1,22 @@
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_setup.py:_flush():75] Loading settings from /home/awc2159/.config/wandb/settings
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_setup.py:_flush():75] Loading settings from /home/awc2159/projects/MeTra_3D/outputs/2024-12-29/00-57-57/wandb/settings
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_setup.py:_flush():75] Loading settings from environment variables: {'_require_service': 'True'}
+2024-12-29 00:57:59,375 WARNING MainThread:537889 [wandb_setup.py:_flush():75] Could not find program at -m classification.training.trainer
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': None, 'program': '-m classification.training.trainer'}
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_setup.py:_flush():75] Applying login settings: {'mode': 'offline'}
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_init.py:_log_setup():437] Logging user logs to /home/awc2159/projects/MeTra_3D/outputs/2024-12-29/00-57-57/wandb/offline-run-20241229_005759-3awmmd1b/logs/debug.log
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_init.py:_log_setup():438] Logging internal logs to /home/awc2159/projects/MeTra_3D/outputs/2024-12-29/00-57-57/wandb/offline-run-20241229_005759-3awmmd1b/logs/debug-internal.log
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_init.py:init():471] calling init triggers
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_init.py:init():474] wandb.init called with sweep_config: {}
+config: {}
+2024-12-29 00:57:59,375 INFO    MainThread:537889 [wandb_init.py:init():524] starting backend
+2024-12-29 00:57:59,379 INFO    MainThread:537889 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-12-29 00:57:59,381 INFO    MainThread:537889 [wandb_init.py:init():533] backend started and connected
+2024-12-29 00:57:59,384 INFO    MainThread:537889 [wandb_init.py:init():597] updated telemetry
+2024-12-29 00:57:59,403 INFO    MainThread:537889 [wandb_init.py:init():659] starting run threads in backend
+2024-12-29 00:58:00,935 INFO    MainThread:537889 [wandb_run.py:_console_start():1897] atexit reg
+2024-12-29 00:58:00,936 INFO    MainThread:537889 [wandb_run.py:_redirect():1770] redirect: SettingsConsole.WRAP
+2024-12-29 00:58:00,936 INFO    MainThread:537889 [wandb_run.py:_redirect():1807] Wrapping output streams.
+2024-12-29 00:58:00,937 INFO    MainThread:537889 [wandb_run.py:_redirect():1831] Redirects installed.
+2024-12-29 00:58:00,937 INFO    MainThread:537889 [wandb_init.py:init():684] run started, returning control to user process
+2024-12-29 00:58:02,675 WARNING MsgRouterThr:537889 [router.py:message_loop():76] message_loop has been closed
