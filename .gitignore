@@ -3,5 +3,5 @@ __pycache__/
 EHR_checkpoints/
 EHR_evaluation_outputs/
 outputs/
-notes.txt/
-py_test.py/
+notes.txt
+py_test.py
