@@ -1,0 +1,5 @@
+Change configpath variable in Discretizer in classification/datasets/med_lab_utils/preprocessor.py
+Change configpath variable in class EHRdataset(Dataset): in classification/datasets/mimic_lab.py
+Change path variable in read_timeseries() in classification/datasets/mimic_lab.py
+Change self.normalizer.load_params() in class EHRdataset(Dataset): in classification/datasets/mimic_lab.py
+In @hydra.main() in classification/datasets/mimic_lab.py and classification/training/trainer.py change config_name if you rename it
