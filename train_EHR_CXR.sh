@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python -m classification.training.trainer dataset=my_mimic_lab meta.transforms=True optimizer.lr=5e-6 model.output_logits=1 model=multi_modal_pretrained_vit_lab meta.prefix_name=EHR+CXR scheduler=cosine_annealing epochs=200 meta.batch_size=50 meta.cross_validation=False meta.num_workers=20 model.transforms.img_size=384 meta.gpus=[3] meta.imbalance_handler=None optimizer.name=AdamW optimizer.lr_scheduler=None model.meta.p_visual_dropout=.3 meta.checkpoint_path="/home/awc2159/projects/MeTra_3D/EHR_checkpoints/first_run/EHR_fold_0/EHR_best.ckpt"

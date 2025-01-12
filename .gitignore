@@ -5,3 +5,8 @@ EHR_evaluation_outputs/
 outputs/
 notes.txt
 py_test.py
+EHR_CXR_checkpoints/
+EHR_CXR_evaluation_outputs/
+CXR_checkpoints/
+CXR_evaluation_outputs/
+temp/
